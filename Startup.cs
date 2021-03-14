@@ -66,15 +66,12 @@ namespace fixit
 
             // configure DI for application services
             // services.AddScoped<IUserService, UserService>();
-
             services.AddScoped<IRepository<Service>, ServiceRepository>();
             services.AddScoped<IRepository<Job>, JobRepository>();
             services.AddScoped<IRepository<Role>, RoleRepository>();
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Technician>, TechnicianRepository>();
-
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
