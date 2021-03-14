@@ -1,37 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
+    "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
+    "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
-        "packagesPath": "C:\\Users\\getac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\getac\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
-        "projectName": "fixit",
-        "projectPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectPath": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "packagesPath": "C:\\Users\\yared\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
+        "outputPath": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -59,21 +42,33 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "Harmony.Infrastructure.netcoreapp3.1": {
+              "target": "Package",
+              "version": "[*, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[2.1.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.12, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.12, )"
+            },
+            "System.Data.Entity.Repository": {
+              "target": "Package",
+              "version": "[2.0.0.1, )"
             }
           },
           "imports": [
@@ -94,11 +89,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
->>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

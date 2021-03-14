@@ -12,9 +12,9 @@ using Microsoft.AspNetCore.Authorization;
 namespace Controllers
 {
 
-    [Authorize]
+    // [Authorize]
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/services")]
     public class ServiceController : ControllerBase
     {
         private readonly IRepository<Service> _repo;
@@ -51,7 +51,7 @@ namespace Controllers
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
-
+            Console.WriteLine("Crate Service Method Invoked");
             var service = _mapper.Map<Service>(serviceDto);
             await _repo.UpdateData(service);
             return Ok(serviceDto);
@@ -66,17 +66,6 @@ namespace Controllers
             return Ok(_mapper.Map<ServiceDto>(service));
 
             // return Ok(serviceDto);
-
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -24,7 +24,7 @@ namespace fixit.Data
         {
             var data = await _context.Job
              .Include(e => e.User)
-             .Include(e => e.Technician)
+             .Include(e => e.Technician).ThenInclude(x => x.User)
              .ToListAsync();
             return data;
         }
