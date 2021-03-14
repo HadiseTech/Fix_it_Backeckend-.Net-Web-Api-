@@ -31,7 +31,9 @@ namespace fixit.Data
 
         async Task<Technician> IRepository<Technician>.GetDataById(int id)
         {
-            return await _context.Technician.FirstOrDefaultAsync(x => x.TechnicianId == id);
+            return await _context.Technician
+            .Include(e=>e.User)
+            .FirstOrDefaultAsync(x => x.TechnicianId == id);
         }
 
         async Task<Technician> IRepository<Technician>.InsertData(Technician service)
