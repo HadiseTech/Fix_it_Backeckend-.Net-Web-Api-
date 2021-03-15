@@ -48,6 +48,13 @@ namespace Controllers
             Console.WriteLine("This is the GetUsers method and this the registered users", this.registeredUsers);
         }
 
+        [HttpGet("n/{email}")]
+        public async Task<IActionResult> GetUserByEmail(string email)
+        {
+            Console.WriteLine("Returning job of email" + email);
+            var model = await _jobRepository.GetDataByEmail(email);
+            return Ok(_mapper.Map<UserDto>(model));
+        }
 
 
         // [AllowAnonymous]
@@ -95,6 +102,7 @@ namespace Controllers
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
+            Console.WriteLine("this is returning users");
             var model = await _jobRepository.GetData();
             return Ok(_mapper.Map<IEnumerable<UserDto>>(model));
         }

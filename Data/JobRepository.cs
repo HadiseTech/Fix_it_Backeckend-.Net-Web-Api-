@@ -19,6 +19,11 @@ namespace fixit.Data
             return true;
 
         }
+        public async Task<Job> GetDataByEmail(string email)
+        {
+            return null;
+        }
+
 
         public async Task<System.Collections.Generic.List<Job>> GetData()
         {

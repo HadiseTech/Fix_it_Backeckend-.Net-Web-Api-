@@ -20,7 +20,11 @@ namespace fixit.Data
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task<Technician> GetDataByEmail(string email)
+        {
+            return null;
 
+        }
         async Task<List<Technician>> IRepository<Technician>.GetData()
         {
             var data = await _context.Technician

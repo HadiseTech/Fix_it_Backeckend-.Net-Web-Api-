@@ -8,6 +8,7 @@ namespace fixit.Data
     {
         Task<List<T>> GetData();
         Task<T> GetDataById(int id);
+        Task<T> GetDataByEmail(string email);
 
         Task<T> InsertData(T service);
         Task<T> UpdateData(T service);

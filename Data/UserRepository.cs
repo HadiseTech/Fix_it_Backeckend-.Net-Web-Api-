@@ -33,7 +33,10 @@ namespace fixit.Data
         {
             return await _context.User.FirstOrDefaultAsync(x => x.UserId == id);
         }
-
+        async Task<User> IRepository<User>.GetDataByEmail(string email)
+        {
+            return await _context.User.FirstOrDefaultAsync(x => x.Email == email);
+        }
         async Task<User> IRepository<User>.InsertData(User service)
         {
              _context.User.Add(service);

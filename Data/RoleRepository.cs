@@ -40,6 +40,11 @@ namespace fixit.Data
             return role;
 
         }
+        public async Task<Role> GetDataByEmail(string email)
+        {
+            return null;
+        }
+
         public async Task<Role> UpdateData(Role role)
         {
             _context.Update(role).Property(x => x.RoleId).IsModified = false;
